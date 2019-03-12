@@ -1,0 +1,16 @@
+type Character {
+  key: ID! #obligatory
+  name: String!
+  imageUrl: String
+  father: Character
+  mother: Character
+  spouse: Character
+  childrens: [Character]
+  house: House
+}
+
+# Example with extend Query in the same file
+extend type Query {
+  characters: [Character]
+  character(key: ID!): Character
+}

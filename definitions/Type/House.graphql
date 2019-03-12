@@ -1,0 +1,5 @@
+type House {
+  key: ID!
+  name: String!
+  imageUrl: String
+}

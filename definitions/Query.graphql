@@ -1,3 +1,8 @@
 type Query {
   _empty: String
 }
+
+extend type Query {
+  houses: [House] #define the query
+  house(key: ID!): House
+}
